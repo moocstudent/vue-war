@@ -12,6 +12,8 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false"
   },
   "dependencies": {
+    "dhtmlx-gantt": "^8.0.1",
+    "frappe-gantt": "^0.6.1",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0"
   },

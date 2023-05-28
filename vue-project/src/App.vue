@@ -16,6 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/count">Count</RouterLink>
         <RouterLink to="/count2">Count2</RouterLink>
         <RouterLink to="/toggle">Toggle</RouterLink>
+        <RouterLink to="/gantt">Gantt</RouterLink>
       </nav>
     </div>
   </header>

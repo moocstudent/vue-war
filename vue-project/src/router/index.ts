@@ -59,6 +59,16 @@ const router = createRouter({
       component: () => {
         return import('../views/GanttDemo.vue');
       }
+    },
+    {
+      path: '/eng',
+      name: 'english',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => {
+        return import('../views/EnglishDemo.vue');
+      }
     }
   ]
 })

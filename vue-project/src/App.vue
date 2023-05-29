@@ -17,6 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/count2">Count2</RouterLink>
         <RouterLink to="/toggle">Toggle</RouterLink>
         <RouterLink to="/gantt">Gantt</RouterLink>
+        <RouterLink to="/eng">English</RouterLink>
       </nav>
     </div>
   </header>

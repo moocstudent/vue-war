@@ -1,5 +1,13 @@
 <template>
-<p v-html="english"></p>
+  <div style="text-align: right">
+  <p v-html="english"></p>
+  <button :disabled="isBtnDisabled">Button</button>
+  <button :disabled="isBtnDisabled2">Button2</button>
+    <div v-bind="objectOfAttrs"></div>
+  </div>
+  <time :title="toTitleDate(date)" :datetime="date">
+    {{ formatDate(date) }}
+  </time>
 </template>
 
 <script>
@@ -7,6 +15,13 @@ export default {
   name: "EnglishDemo",
   data(){
     return{
+      date: new Date(),
+      objectOfAttrs: {
+        id: 'container',
+        class: 'wrapper'
+      },
+      isBtnDisabled:"",
+      isBtnDisabled2:null,
       english: "absorb: v.汲取；吸收  acquaintance: n.对（某人某事的）了解；认识；熟人" +
           "\n\t assign: v.分配（任务）给某人  aware: n.知道的；意识到的" +
           "\n\t command n.掌握，运用能力  commit: v.做出（错或非法的事）；犯（罪或错）等" +
@@ -25,6 +40,14 @@ export default {
           "\n\t over and over again: 反复，多次  put……into practice: 把……付诸实践" +
           "\n\t seek out: 寻找，找出  watch out for: 密切注意" +
           "",
+    }
+  },
+  methods:{
+    toTitleDate(date){
+      return "123"
+    },
+    formatDate(date){
+      return "000"
     }
   }
 }

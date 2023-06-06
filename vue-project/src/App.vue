@@ -18,6 +18,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/toggle">Toggle</RouterLink>
         <RouterLink to="/gantt">Gantt</RouterLink>
         <RouterLink to="/eng">English</RouterLink>
+        <RouterLink to="/reactive">Reactive</RouterLink>
+        <RouterLink to="/compute">Compute</RouterLink>
       </nav>
     </div>
   </header>

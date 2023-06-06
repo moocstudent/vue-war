@@ -69,6 +69,26 @@ const router = createRouter({
       component: () => {
         return import('../views/EnglishDemo.vue');
       }
+    },
+    {
+      path: '/reactive',
+      name: 'reactive',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => {
+        return import('../views/ReactiveDemo.vue');
+      }
+    },
+    {
+      path: '/compute',
+      name: 'compute',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => {
+        return import('../views/ComputeDemo.vue');
+      }
     }
   ]
 })

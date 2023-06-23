@@ -20,6 +20,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/eng">English</RouterLink>
         <RouterLink to="/reactive">Reactive</RouterLink>
         <RouterLink to="/compute">Compute</RouterLink>
+        <RouterLink to="/cycle">LifeCycle</RouterLink>
       </nav>
     </div>
   </header>
